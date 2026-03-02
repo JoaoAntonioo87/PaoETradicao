@@ -26,8 +26,6 @@ const imgsIntro = Array.from(document.querySelectorAll(".intro-img"));
 const widthDevice = window.innerWidth;
 let counter = 0;
 
-console.log(widthDevice);
-
 setInterval(() => {
   if (counter < widthDevice * (imgsIntro.length - 1)) {
     counter = counter + widthDevice;
