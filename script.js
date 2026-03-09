@@ -55,7 +55,7 @@ setInterval(() => {
       counter = 0;
     });
   }
-}, 2500);
+}, 3000);
 
 // SLIDE ANIMATIONS
 const slideElements = document.querySelectorAll("[data-slide]");
@@ -113,7 +113,7 @@ accordionElement.forEach((element) => {
 const allImgs = Array.from(document.querySelectorAll("[src$='webp']"));
 
 allImgs.forEach((image) => {
-  if (window.outerWidth > 750 && image.className == "intro-img") {
-    image.outerHTML = image.outerHTML.replace("mobile", "desktop");
+  if (window.outerWidth < 750 && image.className == "intro-img") {
+    image.outerHTML = image.outerHTML.replace("desktop", "mobile");
   }
 });
